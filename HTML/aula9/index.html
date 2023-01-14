@@ -80,9 +80,54 @@
         </p>
 
         <p>
+            <label for="password">Sua senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha:">
+        </p>
+
+        <p>
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" min="0" max="10" step="2" list="tickmarks">
+
+            <datalist id="tickmarks">
+                <option value="0" label="0%"></option>
+                <option value="5" label="50%"></option>
+                <option value="10" label="100%"></option>
+            </datalist>
+        </p>
+        
+        <p>
+            <label for="url">Sua URL:</label>
+            <input type="url" id="url" name="url" placeholder="URL:">
+        </p>
+
+        <p>
+            <label for="search">Sua procura:</label>
+            <input type="search" id="search" name="search" placeholder="search:">
+        </p>
+
+        <p>
+            <label for="select">Selecione uma opção:</label>
+            <select id="select" name="select">
+                <optgroup label="Linguagens">
+                    <option value="HTML">HTML</option>
+                    <!-- Mesma coisa escrever fora ou dentro do label -->
+                    <option value="HTML" label="JavaScript"></option>
+                    <option value="HTML" selected>Python</option>
+                    <option value="HTML" disabled>CSS</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="textarea">Área de Texto:</label>
+            <textarea name="textarea" id="textarea" rows="3" cols="10"> Tem como ja colocar um valor!</textarea>
+        </p>
+
+        <p>
             <button type="reset">Reset</button>
             <button type="submit">Enviar</button>
         </p>
+
            
     </form>
 </body>
