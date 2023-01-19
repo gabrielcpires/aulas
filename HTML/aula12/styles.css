@@ -1,0 +1,61 @@
+/* pseudo classes */
+
+.heading{
+    transition: all 300ms ease-in-out;
+}
+/* para quando passar o mouse por cima */
+.heading:hover{
+    background-color: red;
+}
+
+a{
+    color: darkorange;
+}
+
+/* mudar as caracteristicas de link não visitados */
+a:link{
+    color: deeppink;
+}
+
+/* mudar as caracteristicas de link visitados */
+a:visited{
+    color: firebrick;
+}
+
+a:hover{
+    background: darkblue;
+    color: white;
+    text-decoration: none;
+}
+
+/* para quando clicar/segurar */
+a:active{
+    background: darkslategray;
+    color: white;
+    text-decoration: none;
+}
+
+/* para quando tiver em foco (quando clicar)
+input:focus{
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    outline: none;
+    border: 1px solid black;
+}
+para quando tiver com o atributo disabled, pode usar enabled tbm 
+input:disabled{
+    background-color: grey;
+    cursor: not-allowed;
+} */
+
+input:checked + p{
+    background: red;
+}
+
+/* selecionar primeirou ou ultimo filho (first - last) */
+.pai .lista li:last-child{
+    background-color: red;
+}
+
+input:required{
+    background-color: green;
+}
