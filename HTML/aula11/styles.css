@@ -1,14 +1,33 @@
+/* selecionar tudo */
 *{
     margin: 0;
     padding: 0;
 }
-
 .pai .um + .dois {
     color: red;
 }
-
-[meu-atributo = "A"]{
+/* Seletores para atributos */
+[meu-atributo~="valor-a"]{
     color: red;
+}
+
+[meu-atributo |="qualquercoisa"]{
+    color: blue;
+}
+
+/* começa com */
+[meu-atributo ^="teste"]{
+    color: brown;
+}
+
+/* termina com */
+[meu-atributo $="p"]{
+    color: green;
+}
+
+/* contém */
+[meu-atributo *="#"]{
+    color: salmon;
 }
 
 [checked]{
